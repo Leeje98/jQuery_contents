@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full_Down_Menu</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./js/Full_Down_Menu.js"></script>
+</head>
+
+<style>
+    *{margin: 0; padding: 0;}
+    li {list-style: none;}
+
+    .lnb01 {margin-bottom: 50px;}
+
+    nav {
+        overflow: hidden;
+        width: 600px;
+    }
+
+    .btn {
+        float: left;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        line-height: 50px;
+        width: 100px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .lnbMenu li {
+        float: left;
+        background-color: aquamarine;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        line-height: 50px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .list01 {
+        width: 600px;
+        height: 500px;
+        overflow: hidden;
+        background-color: aqua;
+        /* border: 1px solid #333; */
+        text-align: center;
+        line-height: 500px;
+        font-size: 50px;
+        transition: 0.5s;
+    }
+
+    .list02 {
+        width: 600px;
+        height: 0px;
+        background-color: yellowgreen;
+        /* border: 1px solid #333; */
+        text-align: center;
+        line-height: 400px;
+        font-size: 50px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .btn02_1, .btn02_2 {
+        display: none;
+    }
+
+    .on {display: block;}
+
+
+
+
+</style>
+<body>
+
+
+<nav class="lnb lnb01">
+    <div class="btn btn01">버튼</div>
+    <ul class="lnbMenu lnbMenu01">
+        <li>menu01</li>
+        <li>menu02</li>
+        <li>menu03</li>
+        <li>menu04</li>
+        <li>menu05</li>
+    </ul>
+
+    <div class="list list01">
+        Full_Down_Menu
+    </div>
+</nav>
+
+
+
+
+<nav class="lnb lnb02">
+    <div class="btn btn02_1 on">열기</div>
+    <div class="btn btn02_2">닫기</div>
+    <ul class="lnbMenu lnbMenu02">
+        <li>menu01</li>
+        <li>menu02</li>
+        <li>menu03</li>
+        <li>menu04</li>
+        <li>menu05</li>
+    </ul>
+</nav>
+<div class="list list02">
+    Full_Down_Menu
+</div>
+
+
+    
+</body>
+</html>

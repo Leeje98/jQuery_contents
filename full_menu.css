@@ -1,0 +1,66 @@
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: black;}
+
+.outerHeader {
+    width: 100%; height: 30px;
+    position: relative;
+}
+
+.innerHeader {
+    width: 100%; height: 30px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.header {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.header .lnb {
+    position: relative;
+}
+
+.header .lnb li {
+    width: 150px;
+    float: left;
+    text-align: center;
+    padding-bottom: 10px;
+
+    line-height: 30px;
+}
+
+.header .lnb li ul {
+    width: 140px;
+    position: absolute;
+    left: 0; top: 30px;
+    background-color: white;
+    padding: 5px;
+    display: none;
+}
+
+.header .lnb li ul.on {background-color: #dfdfdf;}
+.header .lnb li.m1 ul {left: 0;}
+.header .lnb li.m2 ul {left: 150px;}
+.header .lnb li.m3 ul {left: 300px;}
+.header .lnb li.m4 ul {left: 450px;}
+.header .lnb li.m5 ul {left: 600px;}
+
+.header .lnb li ul li a {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.header .lnb li li a:hover,
+.header .lnb li li a:focus {
+    color: red;
+}
+
+.visual {
+    width: 100%; height: 300px;
+    background-color: yellow;
+}

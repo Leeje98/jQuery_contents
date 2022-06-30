@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윙배너 / 로그인 기능 제이쿼리 구현</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./js/wing.js"></script>
+
+    <style>
+        *{margin: 0; padding: 0;}
+
+
+        .wrap {
+            position: relative;
+        }
+
+        .left_wing {
+            position: absolute;
+            left: 0; top: 0;
+            /* width: 300px; */
+            width: 0;
+            height: 100vh;
+            background-color: skyblue;
+            border: 1px solid #333; box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+
+        .left_wing .inner_left_wing {
+            position: relative;
+        }
+        
+        .left_wing .inner_left_wing .button {
+            top: 0; right: -52px;
+        }
+
+
+
+        .button {
+            width: 50px; height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #333;
+            background-color: #333;
+            color: white;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .closs {display: none;}
+
+
+        .right_wing {
+            position: absolute;
+            right: -300px; top: 0;
+            width: 300px;
+            height: 100vh;
+            background-color: plum;
+            border: 1px solid #333; box-sizing: border-box;
+        }
+
+        .right_wing .inner_right_wing {position: relative;}
+        
+        .right_wing .inner_right_wing .button {
+            top: 0; left: -52px;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <section class="left_wing">
+        <div class="inner_left_wing">
+            <div class="button left_button open on">열기</div>
+            <div class="button left_button closs">닫기</div>
+        </div>
+    </section>
+    
+    <section class="right_wing">
+        <div class="inner_right_wing">
+            <div class="button right_button open on">열기</div>
+            <div class="button right_button closs">닫기</div>
+        </div>
+    </section>
+    
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab_Sheet</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./js/tab_sheet.js"></script>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        li {list-style: none;}
+
+        .tab {
+            overflow: hidden;
+        }
+
+        .tab li {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black; 
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+            cursor: pointer;
+        }
+
+        .tab li.on {
+            background-color: yellow;
+        }
+
+        .tab_sheet div {
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 500px;
+            font-size: 50px;
+            display: none;
+        }
+
+        .tab_sheet div.on_sheet {display: block;}
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <ul class="tab">
+        <li class="on">tab01</li>
+        <li>tab02</li>
+        <li>tab03</li>
+        <li>tab04</li>
+    </ul>
+
+    <section class="tab_sheet">
+        <div class="on_sheet">sheet01</div>
+        <div>sheet02</div>
+        <div>sheet03</div>
+        <div>sheet04</div>
+    </section>
+
+
+
+    
+</body>
+</html>

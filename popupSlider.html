@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup_Slider</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./js/popupSlider.js"></script>
+    <!-- <script src="./js/popupSlider_copy.js"></script> -->
+
+    <style>
+        * {margin: 0; padding: 0;}
+        li {list-style: none;}
+
+        .banner_box {
+            width: 600px;
+            position: relative;
+            /* background-color: #ccc; */
+        }
+
+        .banner {
+            border: 1px solid #333;
+            padding: 15px 35px;
+            margin: 10px;
+        }
+
+        .frame {
+            width: 550px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .frame ul {width: 550px;}
+        .frame ul li {
+            width: 500px;
+            padding: 0 8px;
+        }
+        .frame li.on {
+            display: block;
+        }
+        .ctr_btn {
+            position: absolute;
+            top: 5px; right: 0;
+        }
+
+        .left {
+            position: absolute;
+            top: 50%; left: 15px;
+            margin-top: -15px;
+        }
+
+        .right {
+            position: absolute;
+            top: 50%; right: 15px;
+            margin-top: -15px;
+        }
+
+        .list_num {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <section class="banner_box">
+
+        <div class="banner">
+            <div class="frame">
+                <ul>
+                    <li><a href="#"><img src="./img_0519/spring.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img_0519/summer.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img_0519/autumn.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./img_0519/winter.jpg" alt=""></a></li>
+                </ul>
+            </div> <!-- frame -->
+        </div> <!-- banner -->
+
+        <div class="ctr_btn">
+            <a href="#play" class="play"><img src="./img_0519/play.jpg" alt=""></a>
+            <a href="#play" class="stop"><img src="./img_0519/stop.jpg" alt=""></a>
+        </div>
+
+        <div class="btn">
+            <a href="#left" class="left"><img src="./img_0519/prev.jpg" alt=""></a>
+            <a href="#left" class="right"><img src="./img_0519/next.jpg" alt=""></a>
+        </div>
+
+        <div class="list_num">
+            <a href="#"><img src="./img_0519/1_off.jpg" alt=""></a>  <!-- 연습(테스트)용이라 이미지명 숫자로 시작. 브라우저 올라가면 오류난다 -->
+            <a href="#"><img src="./img_0519/2_off.jpg" alt=""></a> 
+            <a href="#"><img src="./img_0519/3_off.jpg" alt=""></a> 
+            <a href="#"><img src="./img_0519/4_off.jpg" alt=""></a>               
+        </div>
+
+    </section>
+
+
+
+
+
+
+</body>
+</html>
